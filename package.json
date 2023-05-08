@@ -1,0 +1,7 @@
+{
+    "name": "cheng",
+    "private": true,
+    "scripts": {
+        "preinstall": "npx only-allow pnpm"
+    }
+}
