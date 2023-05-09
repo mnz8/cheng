@@ -1,5 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
+import { MessagePattern } from '@nestjs/microservices';
 import { AppService } from './app.service';
+import { AUTHENTICATION_MP } from '../../constants';
 
 @Controller()
 export class AppController {
@@ -8,5 +10,11 @@ export class AppController {
   @Get()
   getHello(): string {
     return this.appService.getHello();
+  }
+
+  @MessagePattern(AUTHENTICATION_MP)
+  authC(data: string): string {
+    console.log('AUTHENTICATION_MP received data', data);
+    return 'hello authentication';
   }
 }
