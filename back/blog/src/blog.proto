@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package blog;
+
+service BlogService {
+  rpc FindOne (BlogById) returns (Blog);
+  rpc FindMany (stream BlogById) returns (stream Blog);
+}
+
+message BlogById {
+  int32 id = 1;
+}
+
+message Blog {
+  int32 id = 1;
+  string name = 2;
+}
