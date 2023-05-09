@@ -1,12 +1,12 @@
-import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
+import { Controller } from '@nestjs/common';
+import { MessagePattern } from '@nestjs/microservices';
+import { USER_MANAGER_MP } from '../../constants';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
-
-  @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  @MessagePattern(USER_MANAGER_MP)
+  user_manager(data: string): string {
+    console.log('USER_MANAGER_MP received data', data);
+    return 'hello user-manager';
   }
 }
