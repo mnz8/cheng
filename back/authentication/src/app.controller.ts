@@ -1,7 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 import { MessagePattern } from '@nestjs/microservices';
 import { AppService } from './app.service';
-import { AUTHENTICATION_MP } from '../../constants';
+import { AUTHENTICATION_MP } from 'collect-config';
 
 @Controller()
 export class AppController {

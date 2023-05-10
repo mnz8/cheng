@@ -2,7 +2,7 @@ import { Controller, Get, Inject } from '@nestjs/common';
 import { AppService } from './app.service';
 import { ClientProxy } from '@nestjs/microservices';
 import { Observable } from 'rxjs';
-import { AUTHENTICATION_SERVICE, AUTHENTICATION_MP, USER_MANAGER_SERVICE, USER_MANAGER_MP, BLOG_SERVICE } from '../../constants';
+import { AUTHENTICATION_SERVICE, AUTHENTICATION_MP, USER_MANAGER_SERVICE, USER_MANAGER_MP, BLOG_SERVICE } from 'collect-config';
 
 @Controller()
 export class AppController {

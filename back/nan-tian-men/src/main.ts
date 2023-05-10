@@ -1,6 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import { NAN_TIAN_MEN_O_PORT } from '../../constants';
+import { NAN_TIAN_MEN_O_PORT } from 'collect-config';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);

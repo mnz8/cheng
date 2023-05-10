@@ -1,6 +1,6 @@
 import { Controller } from '@nestjs/common';
 import { MessagePattern } from '@nestjs/microservices';
-import { USER_MANAGER_MP } from '../../constants';
+import { USER_MANAGER_MP } from 'collect-config';
 
 @Controller()
 export class AppController {
