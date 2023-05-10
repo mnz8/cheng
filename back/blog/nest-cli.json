@@ -8,6 +8,5 @@
       "**/*.proto"
     ],
     "watchAssets": true
-  },
-  "entryFile": "blog/src/main.js"
+  }
 }

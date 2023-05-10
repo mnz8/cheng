@@ -18,6 +18,9 @@ importers:
       '@nestjs/platform-express':
         specifier: ^9.4.0
         version: 9.4.0(@nestjs/common@9.4.0)(@nestjs/core@9.4.0)
+      collect-config:
+        specifier: workspace:^
+        version: link:../collect-config
       reflect-metadata:
         specifier: ^0.1.13
         version: 0.1.13
@@ -103,6 +106,9 @@ importers:
       '@nestjs/platform-express':
         specifier: ^9.4.0
         version: 9.4.0(@nestjs/common@9.4.0)(@nestjs/core@9.4.0)
+      collect-config:
+        specifier: workspace:^
+        version: link:../collect-config
       reflect-metadata:
         specifier: ^0.1.13
         version: 0.1.13
@@ -194,6 +200,9 @@ importers:
       '@nestjs/platform-express':
         specifier: ^9.4.0
         version: 9.4.0(@nestjs/common@9.4.0)(@nestjs/core@9.4.0)
+      collect-config:
+        specifier: workspace:^
+        version: link:../collect-config
       reflect-metadata:
         specifier: ^0.1.13
         version: 0.1.13
@@ -265,6 +274,8 @@ importers:
         specifier: ^5.0.4
         version: 5.0.4
 
+  back/collect-config: {}
+
   back/gateway:
     dependencies:
       '@nestjs/common':
@@ -279,6 +290,9 @@ importers:
       '@nestjs/platform-express':
         specifier: ^9.4.0
         version: 9.4.0(@nestjs/common@9.4.0)(@nestjs/core@9.4.0)
+      collect-config:
+        specifier: workspace:^
+        version: link:../collect-config
       reflect-metadata:
         specifier: ^0.1.13
         version: 0.1.13
@@ -364,6 +378,9 @@ importers:
       '@nestjs/platform-express':
         specifier: ^9.4.0
         version: 9.4.0(@nestjs/common@9.4.0)(@nestjs/core@9.4.0)
+      collect-config:
+        specifier: workspace:^
+        version: link:../collect-config
       reflect-metadata:
         specifier: ^0.1.13
         version: 0.1.13
@@ -449,6 +466,9 @@ importers:
       '@nestjs/platform-express':
         specifier: ^9.4.0
         version: 9.4.0(@nestjs/common@9.4.0)(@nestjs/core@9.4.0)
+      collect-config:
+        specifier: workspace:^
+        version: link:../collect-config
       reflect-metadata:
         specifier: ^0.1.13
         version: 0.1.13

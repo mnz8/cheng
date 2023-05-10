@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { MicroserviceOptions, Transport } from '@nestjs/microservices';
 import { AppModule } from './app.module';
-import { USER_MANAGER_I_PORT } from '../../constants';
+import { USER_MANAGER_I_PORT } from 'collect-config';
 
 async function bootstrap() {
   // tcp 模式 host 默认 localhost

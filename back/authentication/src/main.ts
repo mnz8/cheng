@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { MicroserviceOptions, Transport } from '@nestjs/microservices';
 import { AppModule } from './app.module';
-import { AUTHENTICATION_I_PORT, AUTHENTICATION_O_PORT } from '../../constants';
+import { AUTHENTICATION_I_PORT, AUTHENTICATION_O_PORT } from 'collect-config';
 
 async function bootstrap() {
   /**
