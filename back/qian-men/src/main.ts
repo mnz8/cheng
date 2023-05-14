@@ -5,6 +5,8 @@ import { QIAN_MEN_O_PORT } from 'collect-config';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(AppModule, new FastifyAdapter());
+  app.setGlobalPrefix('/qian-men');
+
   await app.listen(QIAN_MEN_O_PORT);
 }
 
