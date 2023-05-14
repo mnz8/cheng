@@ -1,3 +1,5 @@
 packages:
   - 'back/*'
   - 'front/*'
+  # Cannot install packages for project excluded from workspace
+  - '!**/sample/**'
