@@ -15,3 +15,4 @@ export const AUTHORIZATION_I_PORT = 59997;
 export const GATEWAY_O_PORT = 60004;
 
 export const NAN_TIAN_MEN_O_PORT = 60001;
+export const QIAN_MEN_O_PORT = 20001;
