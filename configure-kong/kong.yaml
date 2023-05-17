@@ -1,0 +1,16 @@
+_format_version: "3.0"
+
+services:
+  - name: blog-grpc
+    protocol: grpc
+    host: localhost
+    port: 50001
+    routes:
+      - name: blog-http
+        protocols: http
+        paths:
+          - /bei-men/blog
+        plugins:
+          - name: grpc-gateway
+            config:
+              proto: /proto/blog.proto
